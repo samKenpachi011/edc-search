@@ -2,5 +2,6 @@
 omit =
     */wsgi.py
     setup.py
+    edc_search/apps.py
     manage.py
     */migrations/*
