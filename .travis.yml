@@ -19,6 +19,7 @@ before_script:
 - flake8 edc_search
 
 script:
+- python manage.py check
 - coverage run --source=edc_search manage.py test
 
 after_success:
