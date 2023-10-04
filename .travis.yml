@@ -1,0 +1,25 @@
+os: linux
+dist: focal
+language: python
+
+python:
+  - "3.11"
+
+branches:
+  only:
+  - develop
+
+install:
+- pip install --upgrade pip
+- pip install -r requirements.txt
+- pip install flake8
+- pip install coveralls
+
+before_script:
+- flake8 edc_search
+
+script:
+- coverage run --source=edc_search manage.py test
+
+after_success:
+- coveralls

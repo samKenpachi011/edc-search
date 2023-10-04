@@ -1,4 +1,4 @@
-from django.test import TestCase, tag
+from django.test import TestCase
 from django.utils.text import slugify
 from edc_base.utils import get_utcnow
 
@@ -39,7 +39,7 @@ class TestSearchSlug(TestCase):
             f2=None,
             f3=None)
         obj.save()
-        self.assertEqual(obj.slug, f'|||attr|dummy|dummy_attr')
+        self.assertEqual(obj.slug, '|||attr|dummy|dummy_attr')
 
     def test_gets_with_inherit(self):
         obj = TestModelExtra(
@@ -49,7 +49,8 @@ class TestSearchSlug(TestCase):
             f4='i am from testmodelextra')
         obj.save()
         self.assertEqual(
-            obj.slug, f'i-am-from-testmodel|||attr|dummy|dummy_attr|i-am-from-testmodelextra')
+            obj.slug, 'i-am-from-testmodel|||attr|dummy|dummy_attr|'
+            'i-am-from-testmodelextra')
 
     def test_duplicates(self):
         obj = TestModelDuplicate(
