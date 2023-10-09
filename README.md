@@ -2,6 +2,12 @@
 [![Build Status](https://app.travis-ci.com/samKenpachi011/edc-search.svg?branch=develop)](https://app.travis-ci.com/samKenpachi011/edc-search)
 [![Coverage Status](https://coveralls.io/repos/github/samKenpachi011/edc-search/badge.svg?branch=develop)](https://coveralls.io/github/samKenpachi011/edc-search?branch=develop)
 
+
+[![Language](https://img.shields.io/badge/Language-Python-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/samKenpachi011/edc-search/releases/tag/v1.0.0)
+[![Log Scan Status](https://img.shields.io/badge/Log%20Scan-Passing-brightgreen.svg)](https://app.travis-ci.com/github/samKenpachi011/edc-search/logscans)
+
 Add a slug field to models using the model mixin `SearchSlugModelMixin`. Specify the fields and/or properties to include in the `slug` in `search_slug_fields`:
 
 
